@@ -1,0 +1,10 @@
+<md-button class="md-primary md-raised" ng-click="ca.edFrm(0, 0, 'edPg','pgs')">Add a page</md-button>
+
+<p>Select a page to edit:</p>
+<md-list>
+	<md-list-item class="" ng-repeat="item in ca.pgs">
+		<div class="md-list-item-text" ng-click="ca.edFrm(item, $index, 'edPg', 'pgs')">
+			<a class="md-button" href='#'>{{item.ptit}}</a>
+		</div>
+	</md-list-item>
+</md-list>

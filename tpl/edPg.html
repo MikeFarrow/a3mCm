@@ -1,0 +1,22 @@
+<h3><span ng-show="ca.curItem === 0" >Add</span> <span ng-show="ca.curItem !== 0" >Edit</span> a page</h3>
+
+<form name="content" novalidate>	
+	<md-input-container>
+		<label>Name</label>
+		<input ng-model="ca.flds.pname" require>
+	</md-input-container>
+
+	<md-input-container>
+		<label>Title</label>
+		<input ng-model="ca.flds.ptit" require>
+	</md-input-container>
+
+	<md-input-container flex>
+		<label>Description</label>
+		<textarea ng-model="ca.flds.pdesc" columns="1" md-maxlength="150"></textarea>
+	</md-input-container>
+
+	<md-button class="md-primary md-raised" ng-click="ca.upFrm('pgs')">Update</md-button>
+	<!--
+	<a ng-show="false && ca.curItem !== 0" href="#" class="btn btn-primary btn-large" ng-click="ca.deFrm()" >Delete</a>-->
+</form>
